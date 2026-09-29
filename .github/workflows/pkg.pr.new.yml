@@ -28,8 +28,8 @@ jobs:
       - name: Set package version
         run: |
           npm pkg set version=0.0.0-preview.${{ github.event.pull_request.head.sha }}
-          echo "::notice title=Install (PR)::npm i https://pkg.pr.new/prisma-field-encryption@${{ github.event.pull_request.number }}"
-          echo "::notice title=Install (SHA)::npm i https://pkg.pr.new/prisma-field-encryption@${{ github.event.pull_request.head.sha }}"
+          echo "::notice title=Install (PR)::npm i https://pkg.pr.new/@shiper/prisma-field-encryption@${{ github.event.pull_request.number }}"
+          echo "::notice title=Install (SHA)::npm i https://pkg.pr.new/@shiper/prisma-field-encryption@${{ github.event.pull_request.head.sha }}"
           echo "::notice title=Version::0.0.0-preview.${{ github.event.pull_request.head.sha }}"
       - name: Publish to pkg.pr.new
         run: pnpx pkg-pr-new publish --compact --no-template --packageManager=pnpm --pnpm

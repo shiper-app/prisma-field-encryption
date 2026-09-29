@@ -24,7 +24,7 @@ import {
   ProgressReportCallback,
   defaultProgressReport,
   visitRecords
-} from 'prisma-field-encryption/dist/generator/runtime'
+} from '@shiper/prisma-field-encryption/dist/generator/runtime'
 
 type Cursor = ${modelName}['${model.cursor}']
 

@@ -1,5 +1,5 @@
 {
-  "name": "prisma-field-encryption",
+  "name": "@shiper/prisma-field-encryption",
   "version": "0.0.0-semantically-released",
   "description": "Transparent field-level encryption at rest for Prisma",
   "type": "commonjs",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/47ng/prisma-field-encryption.git"
+    "url": "git+https://github.com/shiper-app/prisma-field-encryption.git"
   },
   "keywords": [
     "prisma",
