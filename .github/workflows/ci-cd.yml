@@ -27,13 +27,13 @@ jobs:
         run: pnpm install
       - name: Run integration tests
         run: pnpm run ci
-      - uses: 47ng/actions-slack-notify@main
-        name: Notify on Slack
-        if: always()
-        with:
-          status: ${{ job.status }}
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      # - uses: 47ng/actions-slack-notify@main
+      #   name: Notify on Slack
+      #   if: always()
+      #   with:
+      #     status: ${{ job.status }}
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
   cd:
     name: Deployment
